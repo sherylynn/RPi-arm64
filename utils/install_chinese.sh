@@ -7,4 +7,8 @@
 . $(dirname $0)/../global_definitions
 
 #常用工具
-chroot $ROOT_PATH apt install ttf-wqy-zenhei fcitx-googlepinyin -y
+chroot $ROOT_PATH apt install fonts-wqy-zenhei ttf-wqy-zenhei fcitx -y
+
+chroot $ROOT_PATH apt install fcitx-rime -y
+
+chroot $ROOT_PATH ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime

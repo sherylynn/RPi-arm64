@@ -136,7 +136,8 @@ if [ ${INSTALL_LXDE_XRDP:=0} -eq 1 ]; then
 fi
 
 if [ ${INSTALL_I3WM:=0} -eq 1 ]; then
-    ./utils/install_i3wm.sh
+    ./utils/install_i3wm.sh $NEW_USER
+
 fi
 if [ ${INSTALL_CHINESE:=0} -eq 1 ]; then
     ./utils/install_chinese.sh
